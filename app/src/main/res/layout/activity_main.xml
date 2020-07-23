@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/header"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:src="@drawable/bg_header"
+        android:layout_width="match_parent"
+        android:layout_height="256dp"/>
+
+    <ImageView
+        android:id="@+id/logoBCA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_logo_bca"
+        app:layout_constraintStart_toStartOf="@id/header"
+        app:layout_constraintTop_toTopOf="@id/header"
+        android:layout_marginTop="32dp"
+        android:layout_marginStart="24dp"/>
+
+    <ImageView
+        app:layout_constraintTop_toTopOf="@id/logoBCA"
+        app:layout_constraintBottom_toBottomOf="@id/logoBCA"
+        app:layout_constraintEnd_toEndOf="@id/header"
+        android:src="@drawable/ic_outline_info"
+        android:layout_marginEnd="24dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleY="-1"/>
+
+    <TextView
+        android:id="@+id/tvSelamatDatang"
+        app:layout_constraintTop_toBottomOf="@id/logoBCA"
+        app:layout_constraintStart_toStartOf="@id/logoBCA"
+        android:text="Selamat datang di"
+        android:textStyle="bold"
+        android:textSize="32dp"
+        android:textColor="#fff"
+        android:layout_marginTop="32dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/tvBCAMobile"
+        app:layout_constraintTop_toBottomOf="@id/tvSelamatDatang"
+        app:layout_constraintStart_toStartOf="@id/tvSelamatDatang"
+        android:text="BCA Mobile"
+        android:textStyle="bold"
+        android:textSize="32dp"
+        android:textColor="#fff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        app:layout_constraintStart_toStartOf="@id/tvBCAMobile"
+        app:layout_constraintTop_toBottomOf="@id/tvBCAMobile"
+        android:layout_marginTop="16dp"
+        android:text="The future mobile banking"
+        android:textColor="#E7F4FF"
+        android:textSize="18dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <ImageView
+        android:id="@+id/cardSatu"
+        app:layout_constraintTop_toBottomOf="@id/header"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/cardDua"
+        android:layout_marginTop="32dp"
+        android:src="@drawable/bg_card"
+        android:layout_width="112dp"
+        android:layout_height="112dp"/>
+
+    <ImageView
+        android:id="@+id/cardSatuImg"
+        app:layout_constraintTop_toTopOf="@id/cardSatu"
+        app:layout_constraintBottom_toTopOf="@id/cardSatuTV"
+        app:layout_constraintStart_toStartOf="@id/cardSatu"
+        app:layout_constraintEnd_toEndOf="@id/cardSatu"
+        android:layout_marginTop="18dp"
+        android:src="@drawable/ic_mobile_phone"
+        android:layout_width="48dp"
+        android:layout_height="48dp"/>
+
+    <TextView
+        android:id="@+id/cardSatuTV"
+        app:layout_constraintTop_toBottomOf="@id/cardSatuImg"
+        app:layout_constraintEnd_toEndOf="@id/cardSatu"
+        app:layout_constraintStart_toStartOf="@id/cardSatu"
+        android:layout_marginTop="8dp"
+        android:text="m-BCA"
+        android:textColor="#FF003D70"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <ImageView
+        android:id="@+id/cardDua"
+        app:layout_constraintTop_toTopOf="@id/cardSatu"
+        app:layout_constraintStart_toEndOf="@id/cardSatu"
+        app:layout_constraintEnd_toStartOf="@id/cardTiga"
+        android:src="@drawable/bg_card"
+        android:layout_width="112dp"
+        android:layout_height="112dp"/>
+
+    <ImageView
+        android:id="@+id/cardDuaImg"
+        app:layout_constraintTop_toTopOf="@id/cardDua"
+        app:layout_constraintBottom_toTopOf="@id/cardDuaTV"
+        app:layout_constraintStart_toStartOf="@id/cardDua"
+        app:layout_constraintEnd_toEndOf="@id/cardDua"
+        android:layout_marginTop="18dp"
+        android:src="@drawable/ic_card"
+        android:layout_width="48dp"
+        android:layout_height="48dp"/>
+
+    <TextView
+        android:id="@+id/cardDuaTV"
+        app:layout_constraintTop_toBottomOf="@id/cardDuaImg"
+        app:layout_constraintEnd_toEndOf="@id/cardDua"
+        app:layout_constraintStart_toStartOf="@id/cardDua"
+        android:layout_marginTop="8dp"
+        android:text="Klik BCA"
+        android:textColor="#FF003D70"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <ImageView
+        android:id="@+id/cardTiga"
+        app:layout_constraintTop_toTopOf="@id/cardDua"
+        app:layout_constraintStart_toEndOf="@id/cardDua"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:src="@drawable/bg_card"
+        android:layout_width="112dp"
+        android:layout_height="112dp"/>
+
+    <ImageView
+        android:id="@+id/cardTigaImg"
+        app:layout_constraintTop_toTopOf="@id/cardTiga"
+        app:layout_constraintBottom_toTopOf="@id/cardTigaTV"
+        app:layout_constraintStart_toStartOf="@id/cardTiga"
+        app:layout_constraintEnd_toEndOf="@id/cardTiga"
+        android:layout_marginTop="18dp"
+        android:src="@drawable/ic_files_and_folders"
+        android:layout_width="48dp"
+        android:layout_height="48dp"/>
+
+    <TextView
+        android:id="@+id/cardTigaTV"
+        app:layout_constraintTop_toBottomOf="@id/cardTigaImg"
+        app:layout_constraintEnd_toEndOf="@id/cardTiga"
+        app:layout_constraintStart_toStartOf="@id/cardTiga"
+        android:layout_marginTop="8dp"
+        android:text="Info BCA"
+        android:textColor="#FF003D70"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/tvLainnya"
+        app:layout_constraintTop_toBottomOf="@id/cardSatu"
+        app:layout_constraintStart_toStartOf="@id/cardSatu"
+        android:layout_marginTop="32dp"
+        android:textSize="18sp"
+        android:text="Lainnya"
+        android:textStyle="bold"
+        android:textColor="#FF003D70"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <ImageView
+        android:id="@+id/ivSubCardSatu"
+        app:layout_constraintTop_toBottomOf="@id/tvLainnya"
+        app:layout_constraintStart_toStartOf="@id/tvLainnya"
+        android:layout_marginTop="32dp"
+        android:src="@drawable/bg_card"
+        android:layout_width="64dp"
+        android:layout_height="64dp"/>
+
+    <ImageView
+        android:id="@+id/ivSubCardSatuImg"
+        app:layout_constraintTop_toTopOf="@id/ivSubCardSatu"
+        app:layout_constraintBottom_toBottomOf="@id/ivSubCardSatu"
+        app:layout_constraintStart_toStartOf="@id/ivSubCardSatu"
+        app:layout_constraintEnd_toEndOf="@id/ivSubCardSatu"
+        android:src="@drawable/ic_plus"
+        android:layout_width="32dp"
+        android:layout_height="32dp"/>
+
+    <TextView
+        app:layout_constraintTop_toTopOf="@id/ivSubCardSatu"
+        app:layout_constraintBottom_toBottomOf="@id/ivSubCardSatu"
+        app:layout_constraintStart_toEndOf="@id/ivSubCardSatu"
+        android:layout_marginStart="16dp"
+        android:text="Buat Rekening Baru"
+        android:textColor="#FF003D70"
+        android:textSize="18sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0.5dp"
+        android:background="@android:color/darker_gray"
+        app:layout_constraintEnd_toEndOf="@id/cardTiga"
+        app:layout_constraintStart_toStartOf="@id/cardSatu"
+        app:layout_constraintTop_toBottomOf="@id/ivSubCardSatu"
+        app:layout_constraintBottom_toTopOf="@id/ivSubCardDua"/>
+
+    <ImageView
+        android:id="@+id/ivSubCardDua"
+        app:layout_constraintTop_toBottomOf="@id/ivSubCardSatu"
+        app:layout_constraintStart_toStartOf="@id/ivSubCardSatu"
+        android:layout_marginTop="32dp"
+        android:src="@drawable/bg_card"
+        android:layout_width="64dp"
+        android:layout_height="64dp"/>
+
+    <ImageView
+        android:id="@+id/ivSubCardDuaImg"
+        app:layout_constraintTop_toTopOf="@id/ivSubCardDua"
+        app:layout_constraintBottom_toBottomOf="@id/ivSubCardDua"
+        app:layout_constraintStart_toStartOf="@id/ivSubCardDua"
+        app:layout_constraintEnd_toEndOf="@id/ivSubCardDua"
+        android:src="@drawable/ic_gear"
+        android:layout_width="32dp"
+        android:layout_height="32dp"/>
+
+    <TextView
+        app:layout_constraintTop_toTopOf="@id/ivSubCardDua"
+        app:layout_constraintBottom_toBottomOf="@id/ivSubCardDua"
+        app:layout_constraintStart_toEndOf="@id/ivSubCardDua"
+        android:layout_marginStart="16dp"
+        android:text="Ganti kode akses"
+        android:textColor="#FF003D70"
+        android:textSize="18sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0.5dp"
+        android:background="@android:color/darker_gray"
+        app:layout_constraintEnd_toEndOf="@id/cardTiga"
+        app:layout_constraintStart_toStartOf="@id/cardSatu"
+        app:layout_constraintTop_toBottomOf="@id/ivSubCardDua"
+        app:layout_constraintBottom_toTopOf="@id/ivSubCardTiga"/>
+
+    <ImageView
+        android:id="@+id/ivSubCardTiga"
+        app:layout_constraintTop_toBottomOf="@id/ivSubCardDua"
+        app:layout_constraintStart_toStartOf="@id/ivSubCardDua"
+        android:layout_marginTop="32dp"
+        android:src="@drawable/bg_card"
+        android:layout_width="64dp"
+        android:layout_height="64dp"/>
+
+    <ImageView
+        android:id="@+id/ivSubCardTigaImg"
+        app:layout_constraintTop_toTopOf="@id/ivSubCardTiga"
+        app:layout_constraintBottom_toBottomOf="@id/ivSubCardTiga"
+        app:layout_constraintStart_toStartOf="@id/ivSubCardTiga"
+        app:layout_constraintEnd_toEndOf="@id/ivSubCardTiga"
+        android:src="@drawable/ic_commerce_and_shopping"
+        android:layout_width="32dp"
+        android:layout_height="32dp"/>
+
+    <TextView
+        app:layout_constraintTop_toTopOf="@id/ivSubCardTiga"
+        app:layout_constraintBottom_toBottomOf="@id/ivSubCardTiga"
+        app:layout_constraintStart_toEndOf="@id/ivSubCardTiga"
+        android:layout_marginStart="16dp"
+        android:text="Flazz"
+        android:textColor="#FF003D70"
+        android:textSize="18sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
